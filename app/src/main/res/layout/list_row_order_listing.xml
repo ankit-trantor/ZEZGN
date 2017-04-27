@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/lblOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+             />
+
+        <TextView
+            android:id="@+id/lblOrderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblOrderNumber"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:text="Smoking Monkey"
+            android:textColor="#2C2C2C"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblOrderName"
+            android:layout_marginLeft="7dp"
+
+            android:layout_marginTop="5dp"
+            android:text="May-23-2016"
+            android:drawableLeft="@mipmap/calendar"
+            android:drawablePadding="4dp"
+            android:textColor="#8E8E8E"
+            android:textSize="12sp"
+            android:gravity="center"
+             />
+
+        <TextView
+            android:id="@+id/lblOrderAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAction"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="5dp"
+            android:text="56"
+            android:textColor="#2C2C2C"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/btnAction"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="ed"
+            android:padding="7dp"
+            android:background="@drawable/btn_dispatched"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+<!--
+        <Button
+            android:id="@+id/btnAction"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/lblOrderAmount"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="Iteam Packed"
+            android:padding="7dp"
+            android:background="@drawable/btn_dispatched"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+-->
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gpb="http://schemas.android.com/tools"
+    android:background="@color/color_bg">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_margin="15dp"
+        android:background="@drawable/dialogbox">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivDesignPic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/comics" />
+
+            <RelativeLayout
+                android:id="@+id/rlImgQuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivDesignPic"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvImageQuality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16sp"
+                    android:text="Your Image quality is GOOD"
+                    android:textColor="#2C2C2C"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/tvImageQuality"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <View
+                        android:id="@+id/viewPoor"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#CC1100">
+
+                    </View>
+
+                    <View
+                        android:id="@+id/viewFair"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFA824"></View>
+
+                    <View
+                        android:id="@+id/viewGood"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#385E0F"></View>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/ll1"
+
+                    android:layout_alignRight="@+id/ll1"
+                    android:layout_below="@+id/ll1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="POOR"
+                        android:textColor="#898989"
+                        android:textSize="12sp"
+                        android:textStyle="normal">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="FAIR"
+                        android:textColor="#898989"
+                        android:textSize="12sp"
+
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="GOOD"
+                        android:textColor="#898989"
+                        android:textSize="12sp"
+
+                        android:textStyle="normal"></TextView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/etDesignName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlImgQuality"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:singleLine="true"
+                android:hint="Enter your design title"
+                android:textColor="#2C2C2C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDesignQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDesignName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="ABout your image Quality "
+                android:textAllCaps="true"
+                android:textColor="#898989"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvDesignNameBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDesignQuality"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="In some case, the image for which quality should be determined is primarily not he result of a photographic process in a camera, but the result of storing or transmitting the image"
+                android:textColor="#898989"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/btns"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/tvDesignNameBy"
+                android:layout_marginLeft="@dimen/margin_top"
+                android:layout_marginRight="@dimen/margin_top"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/btnClose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded_white"
+                    android:text="CLOSE"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnContinue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/btn_rounded_white"
+                    android:text="CONTINUE"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

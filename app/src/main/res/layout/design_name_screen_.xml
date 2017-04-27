@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/dialogbox">
+
+        <ImageView
+            android:id="@+id/ivFavorite"
+            android:layout_width="@dimen/edittextheight"
+            android:layout_height="@dimen/edittextheight"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/favorite_h"
+
+            />
+
+        <ImageView
+            android:id="@+id/ivDesignPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:layout_above="@+id/descriptionlyt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/comics" />
+
+        <TextView
+            android:id="@+id/tvDesignName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivDesignPic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#2C2C2C"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:id="@+id/descriptionlyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/btnNext">
+
+
+            <TextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/category"
+                android:textColor="#898989"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvCategoryNameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/tvCategoryName"
+                android:text="MUGS"
+                android:textColor="#2C2C2C"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/tvColor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCategoryName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/color"
+                android:textColor="#898989"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvColorValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCategoryName"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tvCategoryName"
+                android:text="2"
+                android:textColor="#2C2C2C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAuthorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvColor1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Author Name:"
+                android:textColor="#898989"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAuthorValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvColorValues"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tvCategoryName"
+                android:text="2"
+                android:textColor="#2C2C2C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvCreatedOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAuthorName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="CREATED ON:"
+                android:textColor="#898989"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvCreatedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAuthorValue"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tvCategoryName"
+                android:text="2"
+                android:textColor="#2C2C2C"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvDesignText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCreatedOn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="DESCRIPTION:"
+                android:textColor="#898989"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvDesignTextValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCreatedDate"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tvDesignText"
+                android:text="2"
+                android:textColor="#898989"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_rounded_black"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right_arrow"
+            android:onClick="onClick"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_14"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

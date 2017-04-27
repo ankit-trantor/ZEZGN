@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/color_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialogbox">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/user_placeholder" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="30dp"
+            android:layout_below="@+id/tvName">
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/email"
+                android:drawablePadding="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/app_text_label_color"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmail"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/phone"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/app_text_label_color"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPhone"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/location"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/app_text_label_color"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivProfilePic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/app_text_label_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/btnAddAddress"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/margin_top"
+            android:layout_marginRight="@dimen/margin_top"
+            android:background="@drawable/btn_rounded_black"
+            android:hint="@string/password"
+            android:text="Edit Profile"
+            android:textSize="@dimen/edit_textsize"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btnAddAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/margin_top"
+            android:layout_marginRight="@dimen/margin_top"
+            android:background="@drawable/btn_rounded_black"
+            android:hint="@string/password"
+            android:text="Add Address"
+            android:textSize="@dimen/edit_textsize"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

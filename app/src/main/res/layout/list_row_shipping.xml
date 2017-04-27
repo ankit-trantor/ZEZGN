@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlOfficeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlHomeAddress"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialogbox">
+
+        <TextView
+            android:id="@+id/tvOfficeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Office Address"
+            android:textAllCaps="true"
+            android:textColor="#2C2C2C"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivOfficeCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOfficeAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/right" />
+
+        <TextView
+            android:id="@+id/tvAddressOffice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivOfficeCheck"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Address 1... hfvggvbhjnnmnlmk n hcvzsbhvbfvbbvbvb bcvbsdvbvbbvbv bubvbsdvvbb"
+            android:textColor="#231F20"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvOfficePin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddressOffice"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:maxLength="6"
+            android:text="1234567"
+            android:textColor="#231F20"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

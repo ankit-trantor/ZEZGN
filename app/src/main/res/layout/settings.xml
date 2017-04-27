@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:background="@color/color_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/dialogbox"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bell_h"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ivNotify"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push Notifications"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:id="@+id/tvNotification"
+                android:layout_toRightOf="@+id/ivNotify"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/disable_sending_push_notifications_to_devices"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_below="@+id/tvNotification"
+                android:textStyle="normal"
+                android:layout_alignLeft="@+id/tvNotification"
+                android:layout_marginTop="5dp"
+                />
+       <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:checked="true"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:id="@+id/switchPushNotification" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/ivNotify"
+                android:background="@color/divider_lin_setting" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rlChangePass"
+            android:onClick="onClick"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/change_password"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ivChangePassword"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:id="@+id/tvResetPass"
+                android:layout_toRightOf="@+id/ivChangePassword"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_your_password"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_below="@+id/tvResetPass"
+                android:textStyle="normal"
+                android:layout_alignLeft="@+id/tvResetPass"
+                android:layout_marginTop="2dp"
+                />
+
+            <ImageView
+                android:src="@mipmap/next"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/ivChangePassword"
+                android:background="@color/divider_lin_setting" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rlLogOut"
+            android:onClick="onClick"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/logout"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ivLogOut"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:id="@+id/tvLogOut"
+                android:layout_toRightOf="@+id/ivLogOut"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signout_from_aber"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_below="@+id/tvLogOut"
+                android:textStyle="normal"
+                android:layout_alignLeft="@+id/tvLogOut"
+                android:layout_marginTop="2dp"
+                />
+
+            <ImageView
+                android:src="@mipmap/next"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/ivLogOut"
+                android:layout_marginBottom="10dp"
+                android:background="@color/divider_lin_setting" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="product_circle_width">120dp</dimen>
+    <dimen name="product_circle_height">120dp</dimen>
+    <dimen name="title_textsize">15sp</dimen>
+</resources>

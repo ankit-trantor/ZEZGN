@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/rlProDetail"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivImage">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The White Lily"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProductCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvProductName"
+                android:layout_below="@+id/tvProductName"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="2dp"
+                android:visibility="gone"
+                android:text="The White Lily"
+                android:textColor="#737373"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProductQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvProductCategory"
+                android:layout_below="@+id/tvProductCategory"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="2dp"
+                android:text="Qty"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_toRightOf="@+id/tvProductQty"
+                android:id="@+id/tvProductQtyValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProductCategory"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="2dp"
+                android:text="Qty"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvProductName"
+                android:layout_below="@+id/tvProductQty"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="2dp"
+                android:text="AED 200"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvProductShippingPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvProductName"
+                android:layout_below="@+id/tvProductPrice"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="2dp"
+                android:visibility="gone"
+                android:text="SHIPPING: AED 200"
+                android:textColor="#737373"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvProductDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvProductName"
+                android:layout_below="@+id/tvProductShippingPrice"
+                android:layout_marginTop="7dp"
+                android:paddingLeft="2dp"
+                android:text="Est. delivery Date:"
+                android:textColor="@color/black"
+                android:textSize="7sp"
+                 />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#231F20</color>
+    <color name="colorPrimaryDark">#231F20</color>
+    <color name="colorAccent">#989898</color>
+    <color name="app_background_color">#231F20</color>
+    <color name="color_bg">#EEF1F1</color>
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="divider_lin_setting">#E5E5E5</color>
+    <color name="order_no">#FFAE00</color>
+    <color name="gray_dark">#a4a4a4</color>
+    <color name="light_gray">#989898</color>
+    <color name="app_text_color">#4A4A4A</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#00bfff</color>
+
+    <color name="app_text_label_color">#2C2C2C</color>
+    <color name="colorFAB">#231F20</color>
+    <color name="seprator_line">#AAAAAA</color>
+    <color name="divider">#ABABAB</color>
+    <color name="divider_mini">#AAAAAA</color>
+    <color name="divider_bottom_menu">#C8C8C8</color>
+    <color name="bottom_bg">#F9F9F9</color>
+</resources>

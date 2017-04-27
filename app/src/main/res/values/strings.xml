@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">ZEZIGN</string>
+    <string name="zezgn">ZEZIGN</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_with">or Login with</string>
+    <string name="add_your_photo">Add your Photo</string>
+    <string name="skip">Skip</string>
+    <string name="smoking_monkey">Smoking Monkey</string>
+    <string name="category">CATEGORY :</string>
+    <string name="color">Color :</string>
+    <string name="email_essential">Please enter Email address</string>
+    <string name="valid_email_essential">Please enter valid Email address</string>
+    <string name="password_essential">Please enter Password</string>
+    <string name="mobile_essential">Please enter Mobile Number</string>
+    <string name="password_essential_min">Please enter minimum 6 digit Password</string>
+    <string name="confirm_password_essential">Please enter Confirm Password</string>
+    <string name="country_essential">Please select country name</string>
+    <string name="pass_not_match_essential">Password not matched</string>
+    <string name="pass__essential_min">Password should be between 6-20 characters in length</string>
+    <string name="first_name">First Name</string>
+    <string name="hintSearchMess">Search..</string>
+    <string name="last_name">Last Name</string>
+    <string name="no_record_found">No Data Available</string>
+
+    <string name="email">Email ID</string>
+    <string name="country">Country</string>
+    <string name="password_validation">Password should be between 6-20 characters in length</string>
+    <string name="con_password_validation">Confirm Password should be between 6-20 characters in length</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="last_name_validation">Maximum of 20 characters are allowed in the Last Name</string>
+    <string name="first_name_validation">Maximum of 20 characters are allowed in the First Name</string>
+    <string name="reset_pass_otp">To reset your password, please provide the OTP sent at your registered email address</string>
+    <string name="otp">Please enter OTP</string>
+    <string name="first_name_number_validation">Only Alphabets, Space And Dot is Allowed in The First Name</string>
+    <string name="last_name_number_validation">Only Alphabets, Space And Dot is Allowed in The Last Name</string>
+    <string name="post_question_image">please attach at least 1 image to post the image question</string>
+
+    <string name="first_name_essential">Please enter First name</string>
+    <string name="last_name_essential">Please enter Last name</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_card_type">Select Card Type</string>
+
+    <string name="back">BACK</string>
+    <string name="my_orders">My Orders</string>
+    <string name="continue_">Continue</string>
+    <string name="signout_from_aber">Sign out from ZEZIGN.</string>
+    <string name="active_locale">ACTIVE_LOCALE</string>
+    <string name="socket_timeout">Oops, seems a network connection problem. Can you please try again?</string>
+
+    <string name="reset_your_password">Reset your password</string>
+    <string name="no_internet">Unable to connect to the Internet.</string>
+    <string name="facebook_app_id">281705178946403</string>
+    <string name="disable_sending_push_notifications_to_devices">Disable sending push notifications to devices</string>
+    <string name="enable_sending_push_notifications_to_devices">Enable sending push notifications to devices</string>
+    <string name="unable_facebook_login">Unable to Login Facebook Login Please try again!!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="choose_your_action">Choose an action</string>
+    <string name="camera">Camera</string>
+    <string name="please_wait">Please wait</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="key_profile_pic">profile_image</string>
+    <string name="key_user_id">user_id</string>
+    <string name="key_name">name</string>
+    <string name="key_email">email</string>
+    <string name="key_mobile">mobile</string>
+    <string name="key_cartcount">cartcount</string>
+    <string name="key_profile_image">profile_image</string>
+    <string name="key_notification_on">notification_on</string>
+    <string name="log_out_msg">Are you sure you want to Logout?</string>
+    <string name="gender">Gender</string>
+    <string name="card_type">Card Type</string>
+    <string name="card_no">Card Number</string>
+    <string name="expiration">EXPIRATION</string>
+    <string name="cvv">CVV</string>
+    <string name="mm_yyyy">MM/YYYY</string>
+    <string name="security_code">Security Code</string>
+    <string name="paynow">Pay Now</string>
+    <string name="mycreditcard">My Credit Card</string>
+    <string name="mydebitcard">My Debit Card</string>
+    <item name="item_click_support" type="id" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="greyscale">Greyscale</string>
+    <string name="sepia">Sepia</string>
+    <string name="invert">Invert</string>
+    <string name="sketch">sketch</string>
+    <string name="emboss">Emboss</string>
+    <string name="blur">Blur</string>
+    <string name="sharpen">Sharpen</string>
+    <string name="none">None</string>
+    <string name="linear">linear</string>
+    <string name="vignette">vignette</string>
+    <string name="saturation">saturation</string>
+    <string name="tint">tint</string>
+
+    <string name="alpha_blue">alpha_blue</string>
+    <string name="alpha_pink">alpha_pink</string>
+    <string name="black_n_white">black_white</string>
+    <string name="email_address">Email Address</string>
+
+    <array name="filters_list">
+        <!--<item>@string/none</item>-->
+        <!--<item>@string/saturation</item>-->
+        <!--<item>@string/sketch</item>-->
+        <!--<item>@string/black_n_white</item>-->
+        <!--<item>@string/tint</item>-->
+        <!--<item>@string/vignette</item>-->
+        <!--<item>@string/blur</item>-->
+        <!--<item>@string/invert</item>-->
+        <!--<item>@string/sharpen</item>-->
+        <!--<item>@string/emboss</item>-->
+        <!--<item>@string/alpha_blue</item>-->
+        <!--<item>@string/alpha_pink</item>-->
+        <!--<item>@string/greyscale</item>-->
+        <!--<item>@string/sepia</item>-->
+        <!--<item>@string/linear</item>-->
+
+        <item>@string/saturation</item>
+        <item>@string/sketch</item>
+        <item>@string/blur</item>
+        <item>@string/invert</item>
+        <item>@string/sharpen</item>
+        <item>@string/emboss</item>
+        <item>@string/alpha_blue</item>
+        <item>@string/alpha_pink</item>
+        <item>@string/greyscale</item>
+        <item>@string/sepia</item>
+
+    </array>
+    <!--<string name="binary">binary</string>-->
+    <!--<item>@string/binary</item>-->
+    <!-- Alert Message   -->
+
+    <string name="alert_login_fav">Please Login First to Add Design in Favorite List.</string>
+    <string name="alert_login_details">Please login first to see details.</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="alert_login_save">please login first to save design?</string>
+
+
+</resources>

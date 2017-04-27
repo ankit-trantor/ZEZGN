@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/color_bg">
+
+    <RelativeLayout
+        android:id="@+id/rlTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_background_color"
+        >
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Thank You"
+            android:textColor="@color/white"
+            android:textSize="@dimen/signup_left"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/rlTopBar"
+        android:background="@drawable/dialogbox">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivDesignPic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/right" />
+
+            <TextView
+                android:id="@+id/tvDesignName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivDesignPic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Thank You"
+                android:textColor="#2C2C2C"
+                android:textSize="25sp"
+                 />
+
+            <TextView
+                android:id="@+id/tvDesignNameBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDesignName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="#2C2C2C"
+                android:text="Your order successfully placed. Thank you for shopping with us."
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDesignNameBy"
+                android:layout_marginLeft="@dimen/margin_top"
+                android:layout_marginRight="@dimen/margin_top"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/btnContinue"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded_black"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                     />
+
+                <Button
+                    android:id="@+id/btnMyOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded_black"
+                    android:text="@string/my_orders"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                     />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnGuestContinue"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btns"
+                android:layout_marginLeft="@dimen/margin_top"
+                android:layout_marginRight="@dimen/margin_top"
+                android:background="@drawable/btn_rounded_black"
+                android:text="Continue"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

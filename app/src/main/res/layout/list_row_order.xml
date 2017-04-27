@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/comics" />
+
+    <TextView
+        android:id="@+id/lblOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivProfilePic"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/ivProfilePic"
+        android:text="#123123123"
+        android:textColor="@color/order_no"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblOrderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblOrderNumber"
+        android:layout_marginLeft="7dp"
+
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/ivProfilePic"
+        android:text="Smoking Monkey"
+
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblOrderName"
+        android:layout_marginLeft="7dp"
+
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/ivProfilePic"
+        android:text="May-23-2016"
+android:drawableLeft="@mipmap/calendar"
+        android:drawablePadding="4dp"
+        android:textColor="#8E8E8E"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblOrderAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ivProfilePic"
+        android:layout_marginRight="38dp"
+        android:text="56"
+        android:textColor="#2C2C2C"
+        android:drawablePadding="1dp"
+        android:drawableLeft="@mipmap/price_small"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/lblOrderAmount"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Iteam Packed"
+        android:padding="7dp"
+android:background="@drawable/btn_dispatched"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lblDate"
+        ></View>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">22dp</dimen>
+    <dimen name="header">29dp</dimen>
+    <dimen name="signup">25dp</dimen>
+    <dimen name="signup_left">25dp</dimen>
+
+    <dimen name="edittextheight">70dp</dimen>
+    <dimen name="buttontext">25dp</dimen>
+    <dimen name="viewwidth">60dp</dimen>
+    <dimen name="edittextheight1">50dp</dimen>
+    <dimen name="viewwidthd">120dp</dimen>
+    <dimen name="video_height">190dp</dimen>
+    <dimen name="title_textsize">18sp</dimen>
+    <dimen name="viewwidthprofile">80dp</dimen>
+    <dimen name="address">150dp</dimen>
+    <dimen name="feed_item_profile_pic">60dp</dimen>
+    <dimen name="product_circle_width">140dp</dimen>
+    <dimen name="product_circle_height">140dp</dimen>
+    <dimen name="cup_area_height1">130dp</dimen>
+    <dimen name="workspace_width">380dp</dimen>
+    <dimen name="workspace_height">500dp</dimen>
+    <dimen name="circle_heigh">140dp</dimen>
+    <dimen name="tshirt_area_width">200dp</dimen>
+    <dimen name="phone_area_width">200dp</dimen>
+
+    <dimen name="margin_5">6dp</dimen>
+
+    <dimen name="custom_height">160sp</dimen>
+
+</resources>

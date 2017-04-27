@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg">
+
+    <RelativeLayout
+        android:layout_width="@dimen/phone_area_height"
+        android:layout_height="@dimen/cart_height"
+        android:id="@+id/rlParentLyt"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialogbox">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/image_width"
+                    android:layout_height="@dimen/image_width"
+                    android:src="@mipmap/comics"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ivDesignPic"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/ivDesignPic"
+                    android:text="Title"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textSize="14sp"
+                    android:textColor="@color/app_background_color"
+                    android:id="@+id/tvDesignName"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDesignName"
+                    android:textSize="14sp"
+                    android:textColor="@color/app_background_color"
+                    android:id="@+id/tvTotalPrice"
+                    android:layout_marginTop="2dp"
+                    android:text="sddds"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/dialogbox_black_cornor_color"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true">
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:id="@+id/rlAddItem"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/app_background_color">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="-"
+                            android:id="@+id/tvQuantityLess"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/white"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:id="@+id/tvTotalProductQuantity" />
+
+                    <RelativeLayout
+                        android:layout_width="35dp"
+                        android:id="@+id/rlRemoveItem"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/app_background_color">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="+"
+                            android:id="@+id/tvQuantityIncrease"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/white"
+                            android:gravity="center"
+                            />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+        <ImageView
+            android:layout_width="@dimen/edittextheight"
+            android:layout_height="@dimen/edittextheight"
+            android:src="@mipmap/cross"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivFavorite"
+            android:layout_marginRight="10dp"
+
+            />
+        <ImageView
+            android:layout_width="@dimen/edittextheight"
+            android:layout_height="@dimen/edittextheight"
+            android:src="@drawable/edit"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/img_editcart"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <RelativeLayout
+            android:id="@+id/rlParentLyt"
+            android:layout_width="match_parent"
+            android:layout_height="105sp"
+            android:layout_marginTop="5dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/ivDesignPic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+               />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvDesignName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivDesignPic"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/smoking_monkey"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDesignNameBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDesignName"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="by McClintock"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+
+
+            <!--    <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    ></RelativeLayout>-->
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.virtualdusk.zezgn.activity.PayInvoiceScreens.CreditCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialogbox"
+        android:layout_margin="20dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittextheight"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/mycreditcard"/>
+
+                <EditText
+                    android:id="@+id/etCardtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittextheight"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/edit_textsize"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:backgroundTint="#AAAAAA"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableRight="@mipmap/arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/card_type"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etCardnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittextheight"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/edit_textsize"
+                    android:backgroundTint="#AAAAAA"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+
+                    android:hint="@string/card_no"
+                    android:inputType="number"
+
+                    android:maxLength="20"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="@dimen/signup"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:textColor="@color/black"
+                            android:text="@string/expiration"/>
+
+                        <EditText
+                            android:id="@+id/etExpiration"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittextheight"
+                            android:gravity="left|center_vertical"
+                            android:textSize="@dimen/edit_textsize"
+                            android:backgroundTint="#AAAAAA"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:drawableRight="@mipmap/arrow"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/mm_yyyy"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:textColor="@color/black"
+                            android:text="@string/cvv"/>
+
+
+                        <EditText
+                            android:id="@+id/etSecuritycode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittextheight"
+                            android:gravity="left|center_vertical"
+                            android:textSize="@dimen/edit_textsize"
+                            android:backgroundTint="#AAAAAA"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:hint="@string/security_code"
+                            android:maxLength="4"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvPaynow"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittextheight"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="@dimen/edit_textsize"
+                    android:background="@drawable/btn_rounded_black"
+                    android:gravity="center|center_horizontal"
+                    android:onClick="onClick"
+                    android:text="@string/paynow"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</FrameLayout>

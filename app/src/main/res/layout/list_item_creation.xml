@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_margin="5dp"
+        android:layout_height="270dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/dialogbox">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/comics"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivDesignPic"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/ivDesignPic"
+                    android:text="htfgn"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textSize="14sp"
+                    android:textColor="#2C2C2C"
+                    android:id="@+id/tvDesignName"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="normal"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDesignName"
+                    android:text="2016-11-11"
+                    android:textSize="10sp"
+                    android:textColor="#898989"
+                    android:id="@+id/tvDate"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="normal"
+                    />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="@dimen/edittextheight"
+            android:layout_height="@dimen/edittextheight"
+            android:src="@mipmap/cross"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:id="@+id/ivCross"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

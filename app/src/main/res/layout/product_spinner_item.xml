@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/instagram"/>
+    <RelativeLayout
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvItem"
+            android:textSize="14sp"
+            android:text="Custom"
+            android:gravity="left"
+            android:textColor="@color/app_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvCost"
+            android:layout_below="@id/tvItem"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:textColor="#BA2029"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="AED 12"/>
+    </RelativeLayout>
+
+</RelativeLayout>

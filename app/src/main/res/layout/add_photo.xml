@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/app_background_color"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            android:id="@+id/ivLogo"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_top"
+        android:id="@+id/rl_add"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/plus_round_icon"
+            android:id="@+id/ivUser"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ivUser"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/margin_top"
+            android:layout_marginRight="@dimen/margin_top"
+            android:background="@drawable/btnwhite"
+            android:hint="@string/password"
+            android:text="@string/add_your_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/app_text_color" />
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ivUser"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/margin_top"
+            android:layout_marginRight="@dimen/margin_top"
+            android:background="@drawable/btnwhite"
+            android:hint="@string/password"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/app_text_color" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_add"
+        android:layout_marginTop="70dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skip"
+            android:padding="7dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:id="@+id/tvSkip"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/skip_arrow"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_alignStart="@+id/tvSkip"
+            android:layout_alignEnd="@+id/tvSkip"
+            android:layout_below="@+id/tvSkip"
+            ></View>
+
+    </RelativeLayout>
+
+</RelativeLayout>

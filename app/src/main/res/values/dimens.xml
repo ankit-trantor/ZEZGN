@@ -1,0 +1,77 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_top">30dp</dimen>
+
+    <dimen name="header">14dp</dimen>
+    <dimen name="fab_margin">46dp</dimen>
+    <dimen name="fab_margin_1">48dp</dimen>
+    <dimen name="signup_left">18dp</dimen>
+    <dimen name="signup">18sp</dimen>
+    <dimen name="edittextheight">40dp</dimen>
+    <dimen name="edittextheight1">40dp</dimen>
+    <dimen name="edit_textsize">14sp</dimen>
+    <dimen name="buttontext">18dp</dimen>
+    <dimen name="viewwidth">40dp</dimen>
+    <dimen name="viewwidthd">100dp</dimen>
+    <dimen name="viewwidthprofile">70dp</dimen>
+    <dimen name="address">130dp</dimen>
+    <dimen name="video_height">170dp</dimen>
+    <dimen name="circle_heigh">130dp</dimen>
+
+    <dimen name="feed_item_margin">10dp</dimen>
+    <dimen name="feed_item_padding_top_bottom">20dp</dimen>
+    <dimen name="feed_item_padding_left_right">15dp</dimen>
+    <dimen name="feed_item_profile_pic">50dp</dimen>
+    <dimen name="feed_item_profile_info_padd">10dp</dimen>
+    <dimen name="feed_item_profile_name">15dp</dimen>
+    <dimen name="feed_item_timestamp">13dp</dimen>
+    <dimen name="feed_item_status_pad_left_right">15dp</dimen>
+    <dimen name="feed_item_status_pad_top">13dp</dimen>
+    <dimen name="feed_item_corner_radius">3dp</dimen>
+    <dimen name="feed_item_border_width">1dp</dimen>
+    <dimen name="feed_item_like_paddingleft">25dp</dimen>
+    <dimen name="feed_item_comment_paddingleft">10dp</dimen>
+    <dimen name="feed_item_tag_paddingleft">30dp</dimen>
+    <dimen name="feed_item_tag_paddingleftbottom">30dp</dimen>
+    <dimen name="feed_item_tag_paddingrighttbottom">30dp</dimen>
+
+    <dimen name="workspace_width">250dp</dimen>
+    <dimen name="workspace_height">420dp</dimen>
+
+    <dimen name="product_circle_width">120dp</dimen>
+    <dimen name="product_circle_height">120dp</dimen>
+
+    <dimen name="textsize_10">10sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_15">15sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="title_textsize">14sp</dimen>
+
+    <dimen name="design_pic_w">80dp</dimen>
+    <dimen name="design_pic_h">100dp</dimen>
+    <dimen name="design_name">12sp</dimen>
+    <dimen name="design_author">10sp</dimen>
+    <dimen name="custom_height">150dp</dimen>
+
+    <dimen name="tshirt_area_height">130dp</dimen>
+    <dimen name="phone_area_height">160dp</dimen>
+    <dimen name="cup_area_height">120dp</dimen>
+    <dimen name="cup_area_height1">120dp</dimen>
+
+    <dimen name="tshirt_area_width">100dp</dimen>
+    <dimen name="phone_area_width">100dp</dimen>
+    <dimen name="cup_area_width">100dp</dimen>
+
+    <dimen name="image_width">100dp</dimen>
+    <dimen name="image_height">100dp</dimen>
+    <dimen name="cart_height">240dp</dimen>
+
+    <dimen name="margin_10">15dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+
+
+</resources>
